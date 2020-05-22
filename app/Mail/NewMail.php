@@ -31,6 +31,7 @@ class NewMail extends Mailable
     public function build()
     {
         return $this->subject($this->details['subject'])
-                    ->view('email.contact');
+                    ->view('email.contact')
+                    ->from($this->details['from'], 'Powered by GitLeaf');
     }
 }
