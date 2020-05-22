@@ -19,3 +19,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('prepare', 'MailController@new_mail');
+
+Route::get('prepare:md', 'MailController@new_mail_md');
