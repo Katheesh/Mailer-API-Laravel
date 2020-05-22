@@ -7,7 +7,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class ContactMail extends Mailable
+class NewMail extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -30,7 +30,6 @@ class ContactMail extends Mailable
      */
     public function build()
     {
-        return $this->subject('Mail from GitLeaf')
-                    ->view('email.contact');
+        return $this->view('email.contact');
     }
 }

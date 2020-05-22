@@ -106,9 +106,6 @@
                             align="center" valign="top">
                             <table width="100%" cellpadding="0" cellspacing="0"
                                    style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
-                                <tr>
-                                    <td style="vertical-align: top; padding-top:30px;" align="center"><a href="javascript:void(0)" target="_blank"><img src="https://gitleaf.com/img/logo.png" alt="logo" height="36"><br/></a> </td>
-                                </tr>
                                 <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
                                     <td class="content-block"
                                         style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;"
@@ -126,8 +123,7 @@
                                                style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; text-align: left; width: 80%; margin: 40px auto;">
                                             <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
                                                 <td style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 5px 0;"
-                                                    valign="top">GitLeaf <br
-                                                            style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;"/>{{date('Y.m.d')}}
+                                                    valign="top">{{date('Y.m.d H:m:s')}}
                                                 </td>
                                             </tr>
                                             <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
@@ -137,38 +133,11 @@
                                                            style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; width: 100%; margin: 0;">
                                                         <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
                                                             <td style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; border-top-width: 1px; border-top-color: #eee; border-top-style: solid; margin: 0; padding: 5px 0;"
-                                                                valign="top">Name
+                                                                valign="top">Sample
                                                             </td>
                                                             <td class="alignright"
                                                                 style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; text-align: right; border-top-width: 1px; border-top-color: #eee; border-top-style: solid; margin: 0; padding: 5px 0;"
-                                                                align="right" valign="top">{{ $details['name'] }}
-                                                            </td>
-                                                        </tr>
-                                                        <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
-                                                            <td style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; border-top-width: 1px; border-top-color: #eee; border-top-style: solid; margin: 0; padding: 5px 0;"
-                                                                valign="top">Email
-                                                            </td>
-                                                            <td class="alignright"
-                                                                style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; text-align: right; border-top-width: 1px; border-top-color: #eee; border-top-style: solid; margin: 0; padding: 5px 0;"
-                                                                align="right" valign="top">{{ $details['email'] }}
-                                                            </td>
-                                                        </tr>
-                                                        <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
-                                                            <td style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; border-top-width: 1px; border-top-color: #eee; border-top-style: solid; margin: 0; padding: 5px 0;"
-                                                                valign="top">Phone
-                                                            </td>
-                                                            <td class="alignright"
-                                                                style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; text-align: right; border-top-width: 1px; border-top-color: #eee; border-top-style: solid; margin: 0; padding: 5px 0;"
-                                                                align="right" valign="top">{{ $details['phone'] }}
-                                                            </td>
-                                                        </tr>
-                                                        <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
-                                                            <td style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; border-top-width: 1px; border-top-color: #eee; border-top-style: solid; margin: 0; padding: 5px 0;"
-                                                                valign="top">Message
-                                                            </td>
-                                                            <td class="alignright"
-                                                                style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; text-align: right; border-top-width: 1px; border-top-color: #eee; border-top-style: solid; margin: 0; padding: 5px 0;"
-                                                                align="right" valign="top"> {{ $details['message'] }}
+                                                                align="right" valign="top"> Sample
                                                             </td>
                                                         </tr>
                                                     </table>
@@ -190,7 +159,7 @@
                                     <td class="content-block aligncenter"
                                         style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; text-align: center; margin: 0; padding: 0 0 20px;"
                                         align="center" valign="top">
-                                        GitLeaf. Mandapathdy, Kannankudah, Batticaloa, Sri Lanka.
+                                        <small><a href="https://gitleaf.com">GitLeaf</a> Sri Lanka.</small>
                                     </td>
                                 </tr>
                             </table>
@@ -204,9 +173,12 @@
                         <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
                             <td class="aligncenter content-block"
                                 style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 12px; vertical-align: top; color: #999; text-align: center; margin: 0; padding: 0 0 20px;"
-                                align="center" valign="top">Questions? <a href="https://gitleaf.com"
+                                align="center" valign="top">Community Support? <a href="https://gitleaf.com/contact"
                                                                                 style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 12px; color: #999; text-decoration: underline; margin: 0;">gitleaf.com</a>
                             </td>
+                        </tr>
+                        <tr>
+                            <td style="vertical-align: top; padding-top:30px;" align="center"><a href="javascript:void(0)" target="_blank"><img src="https://gitleaf.com/img/logo.png" alt="logo" height="36"><br/></a> </td>
                         </tr>
                     </table>
                 </div>
