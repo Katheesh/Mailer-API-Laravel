@@ -11,30 +11,14 @@ class MailController extends Controller
 	{
 
 	    $details = [
+	    	'to' => $request->to,
+	    	'from' => $request->from,
+	    	'subject' => 'Contact Form Mail',
 	        'title' => 'Contact Form Mail',
-	        "name" 	=> $request->name,	
-			"email" 	=> $request->email,
-	    	"phone" 	=> $request->phone,
-	    	"message" 	=> $request->message
+	        "body" 	=> $request->body
 	    ];
    
-    	\Mail::to('ikatheesh@gmail.com')->send(new \App\Mail\NewMail($details));
-
-		return response()->json([
-			'status'  => true,
-			'data'    => $details,
-			'message' => 'Your contact details mailed successfully'
-		]);
-
-		/*$details = $request->all();
-
-	    $messageBody = new NewMail($details);
-
-	    Mail::raw($messageBody, function ($message) {
-	        $message->from('no-reply@gitleaf.com', 'GitLeaf');
-	        $message->to('ikatheesh@gmail.com');
-	        $message->subject('Learning Laravel test email');
-	    });
+    	\Mail::to($request->to)->send(new \App\Mail\NewMail($details));
 
 	    if (Mail::failures()) {
 	        return response()->json([
@@ -48,8 +32,6 @@ class MailController extends Controller
 			'data'    => $details,
 			'message' => 'Your details mailed successfully'
 		]);
-		
-	    }*/
 
 	}
     	
