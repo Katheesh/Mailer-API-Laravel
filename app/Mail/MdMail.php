@@ -30,6 +30,6 @@ class MdMail extends Mailable
     {
         return $this->subject($this->details['subject'])
                     ->markdown('email.markdown')
-                    ->from($this->details['from'], 'Powered by GitLeaf');
+                    ->from($this->details['from'], $this->details['from']);
     }
 }
